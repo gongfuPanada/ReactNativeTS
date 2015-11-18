@@ -2,6 +2,8 @@
 
 import React from "react-native";
 const { StyleSheet, Text, View } = React;
+const Button = require("react-native-button");
+const Actions = require("react-native-router-flux").Actions;
 
 
 const styles = StyleSheet.create({
@@ -37,6 +39,9 @@ export default class Main extends React.Component<any, any> {
                 <Text style={styles.instructions}>
                     Shake or press menu button for dev menu
                 </Text>
+                <Button onPress={Actions.locations}>
+                    Go to Locations
+                </Button>
             </View>
         );
     }

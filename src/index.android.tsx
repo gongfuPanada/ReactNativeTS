@@ -5,6 +5,7 @@ const { StyleSheet, Text, View } = React;
 var { Router, Route, Container, Actions, Animations, Schema } = require("react-native-router-flux");
 
 import Main from "./components/Main/index.android";
+import { Locations } from "./components/Locations/index";
 
 
 const styles = StyleSheet.create({
@@ -25,9 +26,12 @@ export default class App extends React.Component<any, any> {
             <View style={{ flex: 1 }}>
                 <View style={styles.index}/>
                 <Router>
+                    <Schema name="default" sceneConfig={Animations.FlatFloatFromRight}/>
+
                     <Route name="main" component={Main} initial={true} hideNavBar={true} title="Main"/>
-                    </Router>
-                </View>
+                    <Route name="locations" component={Locations} title="Locations"/>
+                </Router>
+            </View>
         );
     }
 }
