@@ -163,5 +163,5 @@ declare module "alt/AltContainer" {
 
 declare module "alt" {
   var alt:AltJS.AltFactory;
-  export = alt;
+  export default alt;
 }
