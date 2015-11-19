@@ -13,9 +13,6 @@
     },
     "alt/alt.d.ts": {
       "commit": "fc341765ebbb04b7109981a25dced01f488f4d94"
-    },
-    "es6-promise/es6-promise.d.ts": {
-      "commit": "fc341765ebbb04b7109981a25dced01f488f4d94"
     }
   }
 }
