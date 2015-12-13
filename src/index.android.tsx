@@ -2,7 +2,7 @@
 
 import React from "react-native";
 const { StyleSheet, Text, View } = React;
-var { Router, Route, Container, Actions, Animations, Schema } = require("react-native-router-flux");
+const { Router, Route, Animations, Schema } = require("react-native-router-flux");
 
 import Main from "./components/Main/index.android";
 import { Locations } from "./components/Locations/index";
