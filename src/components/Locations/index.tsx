@@ -44,11 +44,7 @@ export class Locations extends React.Component<any, LocationState> {
     render() {
         return (
             <View style={styles.container}>
-                {this.state.locations.map(location => {
-                    return (
-                        <Text>{location.name}</Text>
-                    );
-                })}
+                {this.state.locations.map(location => <Text key={location.id}>{location.name}</Text>) }
                 <Button style={styles.buttom} onPress={Actions.main}>
                     Back
                 </Button>
